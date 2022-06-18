@@ -1,0 +1,7 @@
+def fixjapan(dataset):
+    days = []
+    for i in dataset['date']:
+        day = i.split('-')
+        actualday =day[2]+'.'+day[1]+'.'+day[0]
+        days.append(actualday)
+    print(days)
